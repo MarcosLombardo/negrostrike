@@ -1,12 +1,19 @@
 // Estilos y componentes
+import Carousel from "@/components/Carousel/Carousel";
 import Hero from "@/components/Hero/Hero";
+import LastGame from "@/components/LastGame/LastGame";
+import Podium from "@/components/Podium/Podium";
+import ContainerMain from "@/components/ui/Container";
 
 // --------------------
 
 export default function Home() {
-    return (
-        <main className="pt-[56px] md:pt-[64px] max-w-screen-2xl m-auto">
-            <Hero />
-        </main>
-    );
+  return (
+    <ContainerMain>
+      <Hero />
+      <Podium />
+      <LastGame />
+      <Carousel />
+    </ContainerMain>
+  );
 }

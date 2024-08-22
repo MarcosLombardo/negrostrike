@@ -1,14 +1,17 @@
 // Estilos y componentes
+import ContainerDiv from "../ui/SubContainer";
+
+// Hooks
 import Image from "next/image";
 
 // ------------------
 
 const Hero = () => {
-    return (
-        <div className="m-4 flex justify-center">
-            <Image src={"/Arre.jpg"} alt={""} width={1300} height={0} />
-        </div>
-    );
+  return (
+    <ContainerDiv>
+      <Image src={"/Arrecifes.png"} alt={""} width={1250} height={0} />
+    </ContainerDiv>
+  );
 };
 
 export default Hero;

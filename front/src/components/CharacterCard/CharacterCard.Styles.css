@@ -1,0 +1,27 @@
+.card {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 2px 2px 6px #737272;
+  display: flex;
+  flex-direction: column;
+}
+
+.card img {
+  transition: transform 0.3s ease-in-out;
+}
+
+.card img:hover {
+  transform: scale(1.1);
+}
+
+.name {
+  position: relative;
+  padding: 10px;
+  text-align: center;
+  font-size: 18px;
+  background-color: rgba(0, 0, 0);
+  color: #e9f0e2;
+}

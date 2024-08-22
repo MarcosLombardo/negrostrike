@@ -5,25 +5,25 @@
 /* Fonts */
 
 @font-face {
-    font-family: "Lucida Console";
-    src: url("../../public/fonts/LUCON.TTF");
-    font-weight: normal;
-    font-style: normal;
+  font-family: "Lucida Console";
+  src: url("../../public/fonts/LUCON.TTF");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: "Counter-Strike";
-    src: url("../../public/fonts/cs_regular.ttf");
-    font-weight: normal;
-    font-style: normal;
+  font-family: "Counter-Strike";
+  src: url("../../public/fonts/cs_regular.ttf");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @layer base {
-    .font-lucida-console {
-        font-family: "Lucida Console", monospace;
-    }
+  .font-lucida-console {
+    font-family: "Lucida Console", monospace;
+  }
 
-    .font-counter-strike {
-        font-family: "Counter-Strike", sans-serif;
-    }
+  .font-counter-strike {
+    font-family: "Counter-Strike", sans-serif;
+  }
 }
