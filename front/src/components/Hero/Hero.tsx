@@ -9,7 +9,14 @@ import Image from "next/image";
 const Hero = () => {
   return (
     <ContainerDiv>
-      <Image src={"/Arrecifes.png"} alt={""} width={1250} height={0} />
+      <Image
+        src={"/Arrecifes.png"}
+        alt={""}
+        width={1250}
+        height={940}
+        className="w-[90%] h-auto"
+        priority
+      />
     </ContainerDiv>
   );
 };

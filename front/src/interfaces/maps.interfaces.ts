@@ -1,8 +1,11 @@
+import { ICharacter } from "./characters.interface";
+
 export interface IMap {
   id: string;
   name: string;
   image: string;
-  avatar: string;
+  logo: string;
+  radar: string;
   plays: number;
   tt_wins: number;
   ct_wins: number;

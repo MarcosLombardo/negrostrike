@@ -4,10 +4,10 @@
 import ContainerMain from "@/components/ui/Container";
 
 // Interfaces
-import { IMap } from "@/interfaces/maps.interfaces";
+import { ICharacter } from "@/interfaces/characters.interface";
 
 // Endpoints
-import { maps } from "@/utils/data";
+import { characters } from "@/utils/data";
 
 // Hooks
 import { useEffect, useState } from "react";
@@ -20,29 +20,28 @@ export default function CharactersId() {
   const params = useParams();
   const id = params.id;
 
-  const [map, setMap] = useState<IMap | null>(null);
+  const [character, setCharacter] = useState<ICharacter | null>(null);
 
   useEffect(() => {
     if (id) {
-      const foundMap = maps.find((map) => map.id === id);
-      setMap(foundMap || null);
+      const foundCharacter = characters.find((char) => char.id === id);
+      setCharacter(foundCharacter || null);
     }
   }, [id]);
 
   return (
     <ContainerMain>
-      <h1>Detalles del mapa</h1>
-      {map ? (
+      <h1>Detalles del Personaje</h1>
+      {character ? (
         <div>
-          <h2>{map.name}</h2>
-          <p>Partidas jugadas: {map.plays}</p>
+          <h2>{character.name}</h2>
+          <p>Position: {character.position}</p>
           <Image
-            src={map.image}
-            alt={map.name}
+            src={character.image}
+            alt={character.name}
             width={1080}
             height={1080}
             priority
-            style={{ width: "80%", height: "auto" }}
           />
         </div>
       ) : (

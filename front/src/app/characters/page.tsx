@@ -1,6 +1,8 @@
 //Estilos y componentes
 import CharactersCards from "@/components/CharactersCards/CharactersCards";
 import ContainerMain from "@/components/ui/Container";
+
+// Endpoints
 import { characters } from "@/utils/data";
 
 // -----------------

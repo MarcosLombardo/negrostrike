@@ -1,3 +1,5 @@
+import { IMap } from "./maps.interfaces";
+
 export interface ICharacter {
   id: string;
   name: string;

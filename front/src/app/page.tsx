@@ -4,6 +4,7 @@ import Hero from "@/components/Hero/Hero";
 import LastGame from "@/components/LastGame/LastGame";
 import Podium from "@/components/Podium/Podium";
 import ContainerMain from "@/components/ui/Container";
+import { characters } from "@/utils/data";
 
 // --------------------
 
@@ -11,7 +12,7 @@ export default function Home() {
   return (
     <ContainerMain>
       <Hero />
-      <Podium />
+      <Podium characters={characters} />
       <LastGame />
       <Carousel />
     </ContainerMain>
